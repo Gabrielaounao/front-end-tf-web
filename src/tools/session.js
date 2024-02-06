@@ -3,7 +3,8 @@ function createSession(req, obj) {
 }
 
 async function deleteSession(req) {
-    await req.session.destroy();
+    req.session.user = undefined;
+    req.session.destroy();
 }
 
 module.exports = { createSession, deleteSession };
