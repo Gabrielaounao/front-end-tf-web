@@ -1,7 +1,7 @@
 const session = require("./../../tools/session.js");
 
 async function getView(req, res) {
-    await session.deleteSession(req);
+    session.deleteSession(req);
     res.redirect(301, "/login");
 }
 
