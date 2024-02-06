@@ -1,0 +1,25 @@
+<main class="container">
+    <div class="form">
+        <div class="image">
+            <img style="cursor: inherit;" src="/static/img/user dummy.png" alt="">
+            <span>--{nome}--</span>
+        </div>
+
+        <div class="content">
+            <div class="input">
+                <label for="nome">NOME COMPLETO</label>
+                <input type="text" value="--{nome_completo}--" id="nome" disabled>
+            </div>
+            <div class="input">
+                <label for="email">E-MAIL</label>
+                <input type="text" value="--{email}--" id="email" disabled>
+            </div>
+            <div class="input">
+                <label for="vinculo">VÍNCULO COM A INSTITUIÇÃO</label>
+                <input type="text" value="--{vinculo}--" id="vinculo" disabled>
+            </div>
+
+            <button type="button" class="btn btn-green" onclick="location.href='--{URL}--/admin/profile/edit'">ALTERAR DADOS</button>
+        </div>
+    </div>
+</main>

@@ -1,0 +1,20 @@
+<header>
+    <nav class="container">
+        <button type="button" class="btn btn-menu" onclick="openMenu()"><img src="/static/img/menu/menu.png" alt=""> <span>MENU</span></button>
+    </nav>
+</header>
+
+<section id="menu">
+    <div class="menu-background" style="display: none;" onclick="closeMenu()"></div>
+    <div class="menu" style="display: none;">
+        <div class="menu-header" onclick="closeMenu()">
+            <button type="button" class="btn"><img src="/static/img/menu/close.png" alt="&times;"></button>
+            <span>MENU</span>
+        </div>
+        <ul class="menu-body">
+            <li><a href="--{URL}--/help" class="menu-link"><img src="/static/img/menu/ajuda e suporte.png" alt=""> <span>Ajuda e Suporte</span></a></li>
+            <li><a href="--{URL}--/login" class="menu-link"><img src="/static/img/menu/entrar.png" alt=""> <span>Entrar</span></a></li>
+            <li><a href="--{URL}--/signup" class="menu-link"><img src="/static/img/menu/criar conta.png" alt=""> <span>Criar uma conta</span></a></li>
+        </ul>
+    </div>
+</section>

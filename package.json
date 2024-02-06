@@ -1,0 +1,20 @@
+{
+  "name": "bandejao",
+  "version": "1.0.0",
+  "description": "Website for the IFNMG refectory",
+  "main": "src/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gabriela de Souza Reis",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-session": "^2.1.0",
+    "dotenv": "^16.4.1",
+    "express": "^4.18.2",
+    "follow-redirects": "^1.15.5",
+    "node-mailjet": "^6.0.5",
+    "pg": "^8.11.3",
+    "seedrandom": "^3.0.5"
+  }
+}

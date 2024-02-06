@@ -1,0 +1,19 @@
+.status {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: gray;
+    color: white;
+    height: 50px;
+    border: 1px solid black;
+}
+
+.status-error {
+    background-color: rgb(235 107 107);
+}
+
+.status-success {
+    background-color: rgb(75, 195, 91);
+}

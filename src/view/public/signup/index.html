@@ -1,0 +1,106 @@
+<main class="container">
+    <form action="?" method="post" class="form" id="form">
+        --{status}--
+
+        <div class="form-body">
+            <div class="form-column">
+                <div class="input-group">
+                    <label for="nome">Nome Completo</label>
+                    <input type="text" name="nome" id="nome">
+                </div>
+
+                <div class="input-group">
+                    <label for="senha">Senha</label>
+                    <input type="text" name="senha" id="senha">
+                </div>
+            </div>
+
+            <div class="form-column">
+                <div class="input-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email">
+                </div>
+
+                <div class="input-group">
+                    <label for="confirm-senha">Confirme a Senha</label>
+                    <input type="text" name="confirm-senha" id="confirm-senha" required>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-body">
+            <div class="form-column">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-green" onclick="openVinculoModal()">Vínculo com a instituição</button>
+                    <input type="hidden" name="vinculo" id="vinculo">
+                </div>
+            </div>
+            
+            <div class="form-column">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-green" onclick="openContatoModal()">Forma de Contato</button>
+                    <input type="hidden" name="contato" id="contato">
+                </div>
+            </div>
+        </div>
+        
+        <div class="form-footer">
+            <input type="hidden" name="token" value="create">
+            <button type="button" class="btn btn-green" onclick="submitForm()">CRIAR SUA CONTA</button>
+        </div>
+    </form>
+</main>
+
+<section id="modal">
+    <div id="vinculo-modal-background" class="modal-background" style="display: none" onclick="closeVinculoModal()"></div>
+    <div id="vinculo-modal" class="modal" style="display: none">
+        <div class="modal-header">
+            <button type="button" onclick="closeVinculoModal()"><img src="/static/img/menu/close.png" alt=""></button>
+        </div>
+
+        <div class="modal-body">
+            <div class="modal-body-title">
+                <span>VÍNCULO COM A INSTITUIÇÃO</span>
+            </div>
+            
+            <div class="modal-body-content">
+                <div class="modal-body-content-column">
+                    <button type="button" class="btn btn-green" onclick="setVinculo('interno')">REGIME INTERNO</button>
+                    <button type="button" class="btn btn-green" onclick="setVinculo('superior')">ENSINO SUPERIOR</button>
+                </div>
+                <div class="modal-body-content-column">
+                    <button type="button" class="btn btn-green" onclick="setVinculo('medio')">ENSINO MÉDIO</button>
+                    <button type="button" class="btn btn-green" onclick="setVinculo('funcionario')">FUNCIONÁRIO</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal-footer">
+
+        </div>
+    </div>
+
+    <div id="contato-modal-background" class="modal-background" style="display: none" onclick="closeContatoModal()"></div>
+    <div id="contato-modal" class="modal" style="display: none">
+        <div class="modal-header">
+            <button type="button" onclick="closeContatoModal()"><img src="/static/img/menu/close.png" alt=""></button>
+        </div>
+
+        <div class="modal-body">
+            <div class="modal-body-title">
+                <span>SELECIONE UMA FORMA DE CONTATO</span>
+            </div>
+            
+            <div class="modal-body-content">
+                <div class="modal-body-content-column">
+                    <button type="button" class="btn btn-green" onclick="setContato('email')">E-MAIL</button>
+                    <button type="button" class="btn btn-green" onclick="setContato('whatsapp')" disabled>WHATSAPP</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal-footer" style="text-align: center;">
+            <i>NOTIFICAÇÕES SERÃO ENVIADAS</i>
+        </div>
+    </div>
+</section>

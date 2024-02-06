@@ -1,0 +1,21 @@
+<section id="modal">
+    <div class="user-modal-background" id="modal-background-user" style="display: none" onclick="closeUserModal()"></div>
+    <div class="user-modal" id="modal-user" style="display: none">
+        <div class="user-modal-body">
+            <ul class="user-modal-list">
+                <li><a href="--{URL}--/profile" class="user-modal-link"><img src="/static/img/user dummy.png" alt=""> <span>Perfil</span></a></li>
+                <li><a href="--{URL}--/user/help" class="user-modal-link"><img src="/static/img/menu/ajuda e suporte.png" alt=""> <span>Ajuda e Suporte</span></a></li>
+                <li><a href="--{URL}--/exit" class="user-modal-link"><img src="/static/img/exit.png" alt=""> <span>Sair</span></a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<main class="container">
+    <form action="?" method="post" class="content">
+        <span style="text-align: center; margin: 20px auto; font-weight: bold;">VOCÊ FOI CHAMADO!</span>
+        <span style="text-align: center; margin: 20px auto;">CONFIRME SUA ENTRADA NO REFEITÓRIO</span>
+        <input type="hidden" name="token" value="confirm-queue">
+        <button type="submit" class="btn btn-green">CONFIRMAR</button>
+    </form>
+</main>

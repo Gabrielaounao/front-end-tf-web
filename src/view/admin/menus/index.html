@@ -1,0 +1,26 @@
+<main class="container">
+    <h1>GERENCIAR CARDÁPIOS</h1>
+
+    <div class="table">
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Link</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                --{items}--
+            </tbody>
+        </table>
+    </div>
+
+    <a href="--{URL}--/admin/menu/new" class="btn btn-green" style="text-decoration: none; color: black;">CADASTRAR NOVO CARDÁPIO</a>
+</main>
+
+<script>
+    function sendMenu(id) {
+        location.href = "--{URL}--/admin/menu/" + id;
+    }
+</script>

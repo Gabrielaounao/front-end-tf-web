@@ -1,0 +1,68 @@
+.menu-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100%;
+    background-color: #fff;
+}
+
+.menu-header {
+    background-color: var(--light-green);
+    padding: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    cursor: pointer;
+}
+
+.menu-header button {
+    width: 20px;
+    height: 17px;
+    background-color: transparent;
+    border: none;
+    margin-right: 20px;
+    padding: 0;
+}
+
+.menu-header button img {
+    width: 100%;
+    height: 100%;
+}
+
+.menu-header span {
+    font-weight: bold;
+    font-size: 16pt;
+}
+
+.menu-link {
+    width: calc(100% - 40px);
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: transparent;
+    text-decoration: none;
+    color: black;
+}
+
+.menu-link:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.menu-link img {
+    width: 25px;
+    height: 25px;
+    margin-right: 20px;
+}

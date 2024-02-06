@@ -1,0 +1,49 @@
+<section id="modal">
+    <div class="user-modal-background" id="modal-background-user" style="display: none" onclick="closeUserModal()"></div>
+    <div class="user-modal" id="modal-user" style="display: none">
+        <div class="user-modal-body">
+            <ul class="user-modal-list">
+                <li><a href="--{URL}--/profile" class="user-modal-link"><img src="/static/img/user dummy.png" alt=""> <span>Perfil</span></a></li>
+                <li><a href="--{URL}--/user/help" class="user-modal-link"><img src="/static/img/menu/ajuda e suporte.png" alt=""> <span>Ajuda e Suporte</span></a></li>
+                <li><a href="--{URL}--/exit" class="user-modal-link"><img src="/static/img/exit.png" alt=""> <span>Sair</span></a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<main class="container">
+    <form action="?" method="post" class="form">
+        <div class="image">
+            <img src="/static/img/user dummy.png" alt="">
+            <span>--{nome}--</span>
+            <div class="mask"></div>
+            <input type="file" name="image" id="image" style="display: none;">
+        </div>
+
+        <div class="content">
+            <div class="input">
+                <label for="nome">NOME COMPLETO</label>
+                <input type="text" value="--{nome_completo}--" id="nome" name="nome" required>
+            </div>
+            <div class="input">
+                <label for="email">E-MAIL</label>
+                <input type="text" value="--{email}--" id="email" name="email" required>
+            </div>
+            <div class="input">
+                <label for="senha">SENHA</label>
+                <input type="text" value="" id="senha" name="senha" placeholder="Deixe em branco para manter a senha atual">
+            </div>
+            <div class="input">
+                <label for="vinculo">VÍNCULO COM A INSTITUIÇÃO</label>
+                <select name="vinculo" id="vinculo">
+                    <option value="2" --{state-2}-->Ensino Médio</option>
+                    <option value="0" --{state-0}-->Regime Interno</option>
+                    <option value="1" --{state-1}-->Ensino Superior</option>
+                    <option value="3" --{state-3}-->Funcionário</option>
+                </select>
+            </div>
+
+            <button type="button" class="btn btn-green" onclick="submitForm()">ALTERAR DADOS</button>
+        </div>
+    </form>
+</main>

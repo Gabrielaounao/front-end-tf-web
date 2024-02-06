@@ -1,0 +1,28 @@
+<main class="container">
+    <h1>GERENCIAR FILAS</h1>
+
+    <div class="table">
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Horário</th>
+                    <th>Tamanho</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                --{items}--
+            </tbody>
+        </table>
+    </div>
+    
+
+    <a href="--{URL}--/admin/queue/new" class="btn btn-green" style="text-decoration: none; color: black">CADASTRAR NOVA FILA</a>
+</main>
+
+<script>
+    function sendQueue(id) {
+        location.href = "--{URL}--/admin/queue/" + id;
+    }
+</script>

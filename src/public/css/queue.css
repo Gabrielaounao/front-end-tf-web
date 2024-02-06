@@ -1,0 +1,36 @@
+main {
+    display: grid;
+    place-items: center;
+}
+
+h1 {
+    margin: 40px 0;
+}
+
+.form {
+    margin-bottom: 40px;
+    max-width: 400px;
+    width: 100%;
+}
+
+.input {
+    width: 100%;
+    display: grid;
+    place-items: start;
+    margin: 0 0 20px 0;
+}
+
+.input input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-top: 10px;
+    outline: none;
+}
+
+.modal .input {
+    padding: 0 40px;
+    width: calc(100% - 80px);
+}

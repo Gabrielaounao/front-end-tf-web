@@ -1,0 +1,36 @@
+<main class="container">
+    <form action="?" method="post" class="form">
+        <div class="image">
+            <img src="/static/img/user dummy.png" alt="">
+            <span>--{nome}--</span>
+            <div class="mask"></div>
+            <input type="file" name="image" id="image" style="display: none;">
+        </div>
+
+        <div class="content">
+            <div class="input">
+                <label for="nome">NOME COMPLETO</label>
+                <input type="text" value="--{nome_completo}--" id="nome" name="nome" required>
+            </div>
+            <div class="input">
+                <label for="email">E-MAIL</label>
+                <input type="text" value="--{email}--" id="email" name="email" required>
+            </div>
+            <div class="input">
+                <label for="senha">SENHA</label>
+                <input type="text" value="" id="senha" name="senha" placeholder="Deixe em branco para manter a senha atual" required>
+            </div>
+            <div class="input">
+                <label for="vinculo">VÍNCULO COM A INSTITUIÇÃO</label>
+                <select name="vinculo" id="vinculo">
+                    <option value="2" --{state-2}-->Ensino Médio</option>
+                    <option value="0" --{state-0}-->Regime Interno</option>
+                    <option value="1" --{state-1}-->Ensino Superior</option>
+                    <option value="3" --{state-3}-->Funcionário</option>
+                </select>
+            </div>
+
+            <button type="button" class="btn btn-green">ALTERAR DADOS</button>
+        </div>
+    </form>
+</main>

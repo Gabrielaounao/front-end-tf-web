@@ -1,0 +1,51 @@
+<section id="menu">
+    <div class="menu-background" style="display: none;" onclick="closeMenu()"></div>
+    <div class="menu" style="display: none;">
+        <div class="menu-header" onclick="closeMenu()">
+            <button type="button" class="btn"><img src="/static/img/menu/close.png" alt="&times;"></button>
+            <span>MENU</span>
+        </div>
+        <ul class="menu-body">
+            <li><a href="--{URL}--/help" class="menu-link"><img src="/static/img/menu/ajuda e suporte.png" alt=""> <span>Ajuda e Suporte</span></a></li>
+            <li><a href="--{URL}--/login" class="menu-link"><img src="/static/img/menu/entrar.png" alt=""> <span>Entrar</span></a></li>
+            <li><a href="--{URL}--/signup" class="menu-link"><img src="/static/img/menu/criar conta.png" alt=""> <span>Criar uma conta</span></a></li>
+        </ul>
+    </div>
+</section>
+    
+<main>
+    <form action="?" method="post" class="form">
+        <div class="form-header">
+            <span>RECUPERAR SENHA</span>
+        </div>
+
+        <div class="form-body">
+            <div class="input-group">
+                <label for="password">CRIE UMA NOVA SENHA</label>
+                <input type="text" name="password" id="password" required>
+            </div>
+            
+            <div class="input-group">
+                <label for="confirm-password">CONFIRME SUA NOVA SENHA</label>
+                <input type="text" name="confirm-password" id="confirm-password" required>
+            </div>
+        </div>
+
+        <input type="hidden" name="token" value="alter-password">
+
+        <div class="form-footer">
+            <button class="btn btn-default" type="button" onclick="validateForm()">ALTERAR SENHA</button>
+        </div>
+    </form>
+</main>
+
+<script>
+    function validateForm() {
+        if (document.getElementById("password").value !== document.getElementById("confirm-password").value) {
+            alert("A confirmação de senha difere da senha original");
+            return;
+        }
+
+        document.querySelector("form").submit();
+    }
+</script>

@@ -1,0 +1,46 @@
+body {
+    position: relative;
+}
+
+main {
+    display: grid;
+    place-items: center;
+}
+
+.content {
+    margin-top: 5%;
+    width: 90%;
+    max-width: 400px;
+    display: grid;
+}
+
+.card {
+    background-color: var(--light-green);
+    text-align: center;
+    padding: 40px 0;
+    border-radius: 10px;
+    margin: 20px 0;
+    display: grid;
+    place-items: center;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.card:hover {
+    background-color: rgb(91, 227, 91);
+}
+
+.card span {
+    margin: 5px 0 20px 0;
+}
+
+.btn-card {
+    background-color: var(--light-green);
+    margin: 20px 0 !important;
+    padding: 20px 0 !important;
+}
+
+.btn-card:hover {
+    background-color: rgb(91, 227, 91);
+}

@@ -1,0 +1,73 @@
+main {
+    display: grid;
+    place-items: center;
+}
+
+.form {
+    margin-top: 5%;
+    width: 100%;
+    max-width: 400px;
+}
+
+.image {
+    display: grid;
+    place-items: center;
+    margin: 0 0 20px 0;
+    position: relative;
+}
+
+.image img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: lightgray;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.image span {
+    font-weight: bold;
+    text-align: center;
+}
+
+.image img:hover ~ .mask, .mask:hover {
+    display: block;
+}
+
+.mask {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+
+.input {
+    margin: 20px 0;
+}
+
+.input input, .input select {
+    width: calc(100% - 40px);
+    height: 40px;
+    background-color: lightgray;
+    color: black;
+    border: none;
+    font-size: 12pt;
+    padding: 0 20px;
+    outline: none;
+}
+
+.input select {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.content button {
+    width: 100%;
+    margin: 10px 0 30px 0;
+}

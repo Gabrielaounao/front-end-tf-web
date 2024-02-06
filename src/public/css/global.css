@@ -1,0 +1,87 @@
+@import "component/header.css";
+@import "component/status.css";
+
+:root {
+    --dark-green: #2C682B;
+    --light-green: #90B678;
+    --font-family: arial;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family);
+}
+
+html, body {
+    height: 100%;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.btn {
+    margin: 0;
+    padding: 0;
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-default {
+    background-color: white;
+    border: 1px solid black;
+}
+
+.btn-default:hover {
+    background-color: lightgray;
+}
+
+.btn-green {
+    background-color: var(--light-green);
+    border: 1px solid black;
+    font-size: 12pt;
+}
+
+.btn-green:hover {
+    background-color: var(--dark-green);
+}
+
+.input-group {
+    display: grid;
+    place-items: start;
+    margin: 30px auto;
+    width: 100%;
+}
+
+.input-group input {
+    background-color: transparent;
+    color: black;
+    border: none;
+    border-bottom: 1px solid #474747;
+    outline: none;
+    padding: 5px;
+    width: calc(100% - 10px);
+}
+
+input[type=text], input[type=email], input[type=tel], input[type=password] {
+    margin: 10px auto auto auto;
+}
+
+.justify-sb {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 540px) {
+    a, span, button, p {
+        font-size: 10pt;
+    }
+
+    h1, h2, h3, div {
+        font-size: 12pt !important;
+    }
+}

@@ -1,0 +1,29 @@
+<main>
+    <form action="?" method="post" class="form">
+        <div class="form-header">
+            <img src="/static/img/menu/entrar.png" alt="">
+            <span>Entrar</span>
+        </div>
+
+        --{status}--
+
+        <div class="form-body">
+            <div class="input-group">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+
+            <div class="input-group">
+                <label for="senha">Senha</label>
+                <input type="password" name="senha" id="senha" required>
+            </div>
+
+            <a href="--{URL}--/recover-password">Esqueci minha senha</a>
+        </div>
+
+        <div class="form-footer">
+            <button class="btn btn-default" type="button" onclick="location.href='--{URL}--/signup'">CRIAR UMA CONTA</button>
+            <button class="btn btn-default" type="submit">ENTRAR</button>
+        </div>
+    </form>
+</main>
